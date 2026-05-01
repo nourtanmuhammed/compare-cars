@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #e76f25;
+}
+
+
+body {
+    font-family: Arial;
+    background: #130605;
+    color:#eb6b1c ;
+}
+
+#start-page {
+    height: 100vh;
+    text-align: center;
+    padding-top: 120px;
+    background: #130605;
+}
+
+#start-page h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ef7d36;
+}
+
+#start-page p {
+    font-size: 18px;
+    margin-bottom: 80px;
+    color: #b7622c;
+}
+
+.button-group {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.btn1 {
+    background: white;
+    color: black;
+       padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn1:hover {
+    background: #b7622c;
+}
+
+.btn2 {
+    background: #e6e6e6;
+    color: black;
+       padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn2:hover {
+    background: #b7622c;
+    color: white;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #130605; 
+}
+
+.modal-content {
+    padding: 40px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ec7c36;
+}
+
+.cars-table {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.car-card {
+    width: 250px;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.car-card.selected {
+    border: 2px solid #b7622c;
+}
+
+.modal-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slots {
+    display: flex;
+    gap: 20px;
+}
+
+.slot {
+    border: 1px dashed #323232;
+    padding: 15px;
+    width: 150px;
+    color:#b7622c;
+}
+
+#compare-btn {
+    padding: 15px 30px;
+    background: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+#compare-btn.active {
+    background: #b7622c;
+    color: white;
+}
+
+#compare-page {
+    display: none;
+    text-align: center;
+    margin-top: 100px;
+    color: #b7622c;
+}
+
+.compare-table {
+    width: 70%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+.compare-table th {
+    background: transparent;
+    color: #df844c;
+}
+
+.compare-table th,
+.compare-table td {
+    border: 1px solid rgb(58, 48, 48);
+    padding: 15px;
+}
+
+.exit-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+       padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
